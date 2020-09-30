@@ -25,7 +25,7 @@ class employee{
 
         // Utility functions
         void waitForEnter(void){
-            cout<<"\n\n\n Press enter to go back \n\n";
+            cout<<"\n\n\n Press the enter key to go back \n\n";
             cin.get();
             cin.get();
         }
@@ -35,7 +35,7 @@ class employee{
             system("cls");
             FILE *file;
             file= fopen("data.txt", "r");
-            cout<<"\n\t      List of Employees\n";
+            cout<<"\n\t      List of Employees is as follows\n";
             cout<<"\n----------------------------------------------";
             cout<<"\n NAME        |     ID     |     DESIGNATION\n";
             cout<<"----------------------------------------------";
@@ -118,13 +118,13 @@ class employee{
             fclose(file);
             
             cout<<"\n----------------------------------------";
-            cout<<"\n Enter First Name of Employee: ";
+            cout<<"\n Enter First Name of the Employee: ";
             cin>>name;
             cout<<"\n----------------------------------------";
-            cout<<"\n Enter Designation: ";
+            cout<<"\n Enter Designation of the Employee: ";
             cin>>designation;
             cout<<"\n----------------------------------------";
-            cout<<"\n Enter Employee Age: ";
+            cout<<"\n Enter Age of Employee: ";
             cin>>age;
             cout<<"\n----------------------------------------";
             cout<<"\n Enter Employee CTC: ";
