@@ -8,7 +8,7 @@
 using namespace std;
 
 class employee{
-    private:
+    
         // Variables for employee details
         char name[30];
         int id;
