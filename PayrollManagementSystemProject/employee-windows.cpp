@@ -54,15 +54,15 @@ class employee{
             file= fopen("data.txt", "r");
             while(fscanf(file, "%s %d %s %d %d %d %f %f", &name[0], &id , &designation[0], &age, &ctc, &experience, &sal, &grosssal)!=EOF)
                 if(checkId==id){
-                	cout<<"\n---------------------";
+                    cout<<"\n-----------------------";
                     cout<<"\nName: "<<name;
-                    cout<<"\n---------------------";
+                    cout<<"\n------------------------";
                     cout<<"\nId: "<<id;
-                    cout<<"\n---------------------";
+                    cout<<"\n------------------------";
                     cout<<"\nDesignation: "<<designation;
-                    cout<<"\n---------------------";
+                    cout<<"\n-----------------------";
                     cout<<"\nAge: "<<age;
-                    cout<<"\n---------------------";
+                    cout<<"\n-----------------------";
                     cout<<"\nCTC: "<<ctc;
                     cout<<"\n---------------------";
                     cout<<"\nExperience: "<<experience;
@@ -309,7 +309,7 @@ class employee{
                         generatePay();
                         break;
                     default:
-                        cout<<"\n Sorry! I don't understand that! \n";
+                        cout<<"\n Sorry..!! I don't understand that..!! \n";
                         break;
                 }
 
@@ -343,12 +343,12 @@ int login(){ //login procedure
 		Sleep(500);
 		cout << "...";
 	}
-      cout << "\n\n\n\t\t\t\t\tAccess Granted!! \n\n\n";
+      cout << "\n\n\n\t\t\t\t\tAccess Granted..!! \n\n\n";
       
       system("PAUSE");
       system("CLS");
    }else{
-      cout << "\nAccess Aborted...\n";
+      cout << "\nAccess Aborted...!!\n";
       login();
    }
 }
