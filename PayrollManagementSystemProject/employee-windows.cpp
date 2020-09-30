@@ -31,7 +31,9 @@ class employee{
         }
 
         // Functions to perform desired actions
-        void listEmployees(void){ //To list total employees with Name, Id and Designation
+	
+	//Function to list total employees with Name, Id and Designation
+        void listEmployees(void){ 
             system("cls");
             FILE *file;
             file= fopen("data.txt", "r");
@@ -44,8 +46,8 @@ class employee{
             fclose(file);
             waitForEnter();
         }
-
-        void showDetails(void){ //Displays all details according to Employee's id
+	//Function to display all details according to Employee's id
+        void showDetails(void){ 
             system("cls");
             FILE *file;
             int checkId;
@@ -75,8 +77,8 @@ class employee{
             fclose(file);
             waitForEnter();
         }
-
-        void editExisting(void){ //edits Designation and CTC of an employee
+	//Function to edit Designation and CTC of an employee
+        void editExisting(void){ 
             system("cls");
             int checkId;
             cout<<"\nEnter employee id: ";
@@ -104,8 +106,8 @@ class employee{
             int isRenamed= rename("temp.txt", "data.txt");
             waitForEnter();
         }
-
-        void addNewEmployee(void){ //adding records
+	//Function to add records
+        void addNewEmployee(void){ 
         
         	system("cls");
             FILE *file;
@@ -157,8 +159,8 @@ class employee{
                 addNewEmployee();
             waitForEnter();
         }
-
-        void deleteEmployeeDetails(void){ //removing records
+	//Function to remove records
+        void deleteEmployeeDetails(void){ 
             system("cls");
             int checkId;
             cout<<"\n----------------------------------";
@@ -185,7 +187,8 @@ class employee{
             else
                 deleteEmployeeDetails();
         }
-        void addOvertime(void){  //to Calculate salary
+	//Function to Calculate salary
+        void addOvertime(void){  
         	
         	system("cls");
             FILE *file;
